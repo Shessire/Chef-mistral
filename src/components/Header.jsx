@@ -4,7 +4,7 @@ function Header () {
     return (
         <div className='Header'>
             <LunchDiningIcon fontSize='large' className='logo'/>
-            <h1>Chef Claude</h1>
+            <h1>Chef Mistral</h1>
         </div>
     )
 }
