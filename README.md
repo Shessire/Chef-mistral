@@ -1,5 +1,9 @@
 # Chef Mistral 🍳✨
 
+**DEMO**
+Check out the live demo here:
+https://chef-mistral-ten.vercel.app/
+
 **Overview**
 Welcome to the **Chef Mistral**, a web application that transforms your listed ingredients into a delicious recipe! This project is a practice application built with **React**, focusing on **useState** and **props** to manage state and component communication.
 
