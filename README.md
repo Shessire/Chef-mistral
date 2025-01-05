@@ -9,7 +9,6 @@ Welcome to the **Chef Mistral**, a web application that transforms your listed i
 
 The app integrates with **Hugging Face's MistralAI** to generate recipes and instructions based on user input.
 
----
 
 ## **Features**
 - **Dynamic Ingredient Input**: Users can add any ingredients available at home  
@@ -17,7 +16,6 @@ The app integrates with **Hugging Face's MistralAI** to generate recipes and ins
 - **Responsive UI**: The app provides real-time feedback, such as showing the "Generate Recipe" button only when the minimum ingredient requirement is met.  
 - **Reset Functionality**: Clear the ingredient list and start fresh with a single click.
 
----
 
 ## **How It Works**
 1. Users input their ingredients into the app.  
@@ -25,7 +23,6 @@ The app integrates with **Hugging Face's MistralAI** to generate recipes and ins
 3. The app sends the ingredient list to the MistralAI API via Hugging Face.  
 4. After processing, the API returns a markdown-style recipe, which is displayed on the screen.
 
----
 
 ## **Key Technologies**
 - **React**: Built using functional components and hooks such as `useState`.  
