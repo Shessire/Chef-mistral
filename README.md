@@ -29,3 +29,5 @@ The app integrates with **Hugging Face's MistralAI** to generate recipes and ins
 - **Props**: Passed data between components for modular and reusable code.  
 - **MistralAI API**: Accessed via Hugging Face for AI-powered recipe generation.
 
+## ⚠️ Important Note
+The API service (MistralAI API) may occasionally be unavailable. If the app does not work as expected, check your browser's **Console** in the Developer Tools to see if the API is responding.
