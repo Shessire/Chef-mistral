@@ -1,4 +1,4 @@
-export default function IngredientList ({ ingredient, getRecipe }) {
+export default function IngredientList ({ ingredient, getRecipe, recipeSection }) {
     return (
         <div>
             <section>
@@ -11,7 +11,7 @@ export default function IngredientList ({ ingredient, getRecipe }) {
                     {ingredient.length > 2 
                     ?
                         <div className="get-recipe-container">
-                            <div>
+                            <div ref={recipeSection}>
                                 <h3>Ready for a recipe?</h3>
                                 <p>Generate a recipe from your list of ingredients.</p>
                             </div>

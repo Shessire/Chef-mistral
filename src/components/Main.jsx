@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import Recipe from "./Recipe";
 import IngredientList from "./IngredientList";
 import Intro from "./Intro";
@@ -9,6 +9,14 @@ function Main () {
     const [ingredient, setIngredient] = useState([])
     const [inputValue, setInputValue] = useState("")
     const [recipe, setRecipe] = useState("")
+
+    const recipeSection = useRef(null)
+
+    useEffect(() => {
+        if (recipe && recipeSection.current){
+            recipeSection.current.scrollIntoView()
+        }
+    }, [recipe])
 
     function handleOnChange (e) {
         setInputValue(e.target.value)
@@ -52,7 +60,7 @@ function Main () {
             <hr />
             {
                 ingredient.length > 0 
-                ? <IngredientList ingredient={ingredient} getRecipe={getRecipe} />                
+                ? <IngredientList ingredient={ingredient} getRecipe={getRecipe} recipeSection={recipeSection} />                
                 : null
             }
             {
